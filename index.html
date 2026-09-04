@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vape Client — The PVP-First Minecraft Launcher</title>
+<meta name="description" content="Vape Client is a high-performance Minecraft launcher built for PVP. Instant launches, FPS-boosting presets, and one-click version switching.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">V</span>
+      <span class="brand-name">Vape <span class="brand-muted">Client</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#versions">Versions</a>
+      <a href="#download">Download</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-download" href="#download">Get Vape</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section id="top" class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-badge reveal">
+        <span class="pulse-dot"></span>
+        Now available · v1.2.0 · Windows 10 / 11
+      </div>
+      <h1 class="reveal delay-1">Built for <span class="gradient-text">PVP</span>.<br>Optimized to the last frame.</h1>
+      <p class="hero-sub reveal delay-2">
+        Vape Client is a lean, PVP-first Minecraft launcher. It strips away the bloat,
+        boots you into the game in seconds, and gives you performance presets tuned for
+        competitive play — from 1.7.10 to the latest release.
+      </p>
+      <div class="hero-actions reveal delay-3">
+        <a class="btn btn-primary" href="#download">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </a>
+        <a class="btn btn-ghost" href="#features">Explore features</a>
+      </div>
+      <div class="hero-stats reveal delay-4">
+        <div class="stat"><div class="stat-num" data-count="120000">0</div><div class="stat-label">Downloads</div></div>
+        <div class="stat"><div class="stat-num" data-count="30000">0</div><div class="stat-label">Daily players</div></div>
+        <div class="stat"><div class="stat-num" data-count="5">0</div><div class="stat-label">Sec avg boot time</div></div>
+        <div class="stat"><div class="stat-num"><span class="plus">+</span>40</div><div class="stat-label">FPS improvement</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section id="features" class="section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>Every frame counts.</h2>
+        <p class="section-sub">Purpose-built performance and workflow tools for people who take PVP seriously.</p>
+      </div>
+
+      <div class="grid">
+
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>PVP Performance Mode</h3>
+          <p>One-click presets that adjust render distance, particles, and chunk loading for maximum FPS in teamfights and FFA arenas.</p>
+          <span class="card-tag">FPS boost</span>
+        </div>
+
+        <div class="card reveal delay-1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6" /><path d="M14 2v6" /><path d="M16.2 4H8a2 2 0 0 0-2 2v.5" /><path d="M6 6.5C6 9.9 8.5 12 12 12s6-2.1 6-5.5" /><circle cx="12" cy="16" r="6" /></svg>
+          </div>
+          <h3>Targeted Hitboxes</h3>
+          <p>Visual hitbox overlays in practice modes help you understand reach and angle behavior without touching server-side gameplay.</p>
+          <span class="card-tag">Practice tools</span>
+        </div>
+
+        <div class="card reveal delay-2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="12" rx="2"/><path d="m8 20 4-4 4 4"/></svg>
+          </div>
+          <h3>One-Click Version Switching</h3>
+          <p>Flip between 1.7.10, 1.8.9, 1.12.2, or the latest snapshot from the version picker. No re-installs, no matching headaches.</p>
+          <span class="card-tag">All versions</span>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Low-Latency Launch</h3>
+          <p>Optimized JVM flags and a slim install footprint get you from desktop to spawn faster than stock launchers — less waiting, more playing.</p>
+          <span class="card-tag">Speed</span>
+        </div>
+
+        <div class="card reveal delay-1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 12h8"/><path d="M6 12h8"/><path d="M10 8l4 4-4 4"/></svg>
+          </div>
+          <h3>Profile Manager</h3>
+          <p>Keep vanilla, modded, and practice-server setups completely isolated. Each profile gets its own game files, JVM args, and keybinds.</p>
+          <span class="card-tag">Organized</span>
+        </div>
+
+        <div class="card reveal delay-2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Keybind Profiles</h3>
+          <p>Save and hot-swap complete keybinding layouts per game mode — build fights, bedwars, or UHC — and load them in one click.</p>
+          <span class="card-tag">Customize</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NUMBERS BAND ================= -->
+  <section class="band">
+    <div class="section-inner band-inner">
+      <div class="band-item reveal"><h3>+40+</h3><p>Average FPS boost vs. stock client</p></div>
+      <div class="band-item reveal delay-1"><h3>9</h3><p>Modern & legacy versions supported</p></div>
+      <div class="band-item reveal delay-2"><h3>0 ms</h3><p>Gameplay interference — zero modifications to game behavior</p></div>
+      <div class="band-item reveal delay-3"><h3>100%</h3><p>Official Microsoft account sign-in</p></div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section id="how" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">Setup</span>
+        <h2>Up and fighting in 60 seconds.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>Download</h3>
+          <p>Grab the 2.4 MB installer. No bundleware, no forced updates, no side tasks.</p>
+        </div>
+        <div class="step reveal delay-1">
+          <div class="step-num">02</div>
+          <h3>Sign in</h3>
+          <p>Log in with your official Microsoft account. Credentials never leave your machine.</p>
+        </div>
+        <div class="step reveal delay-2">
+          <div class="step-num">03</div>
+          <h3>Launch</h3>
+          <p>Pick your version and profile, then click play. Optimized settings are applied automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VERSIONS ================= -->
+  <section id="versions" class="section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">Versions</span>
+        <h2>Every generation. One launcher.</h2>
+        <p class="section-sub">Built for every meta — old and new.</p>
+      </div>
+      <div class="version-grid reveal">
+        <div class="version-pill">1.7.10</div>
+        <div class="version-pill hot">1.8.9</div>
+        <div class="version-pill">1.12.2</div>
+        <div class="version-pill">1.16.5</div>
+        <div class="version-pill">1.18.2</div>
+        <div class="version-pill">1.19.4</div>
+        <div class="version-pill">1.20.x</div>
+        <div class="version-pill">1.21.x</div>
+        <div class="version-pill">Snapshots</div>
+      </div>
+      <p class="version-note">New versions are added automatically as Minecraft ships them.</p>
+    </div>
+  </section>
+
+  <!-- ================= DOWNLOAD ================= -->
+  <section id="download" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">Download</span>
+        <h2>Get started.</h2>
+        <p class="section-sub">Free forever. No account required to download.</p>
+      </div>
+
+      <div class="download-box reveal">
+        <div class="dl-left">
+          <div class="dl-title">Vape Client Installer</div>
+          <div class="dl-meta">Windows · exe · 2.4 MB · v1.2.0</div>
+          <div class="dl-meta mono">SHA-256: a1b2c3d4e5f6…</div>
+        </div>
+        <a class="btn btn-primary btn-lg" id="downloadBtn" href="#">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </a>
+      </div>
+      <p class="section-sub small reveal">Always download from this site. We will never ask you to disable antivirus or Windows Defender.</p>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq" class="section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions, answered.</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Do I need to own Minecraft?</summary>
+          <p>Yes — Vape Client is a launcher, not a replacement for the game. You need a Microsoft account with Minecraft Java Edition.</p>
+        </details>
+        <details>
+          <summary>Does it modify in-game behavior or give unfair advantages?</summary>
+          <p>No. Vape Client is a launcher only. It tunes launch settings, JVM arguments, and client-side files — it does not touch server-side gameplay, and every server setting stays exactly as the server intends.</p>
+        </details>
+        <details>
+          <summary>Is it safe for my account?</summary>
+          <p>Yes. Sign-in uses Microsoft's official OAuth flow. Your credentials are never stored or transmitted to any external server.</p>
+        </details>
+        <details>
+          <summary>Will it work with my mods?</summary>
+          <p>Separate profiles keep vanilla and modded setups isolated, so existing mod folders and configs are never touched.</p>
+        </details>
+        <details>
+          <summary>Is there a Mac or Linux version?</summary>
+          <p>Not yet — we're focused on Windows first. Follow us for updates.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">V</span>
+      <span class="brand-name">Vape Client</span>
+    </div>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="footer-legal">
+      <p>© 2026 Vape Client. Not affiliated with Mojang or Microsoft.</p>
+      <p>Minecraft is a trademark of Mojang Studios.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
